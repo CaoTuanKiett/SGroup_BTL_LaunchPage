@@ -10,7 +10,6 @@
 
 body {
     background-color: rgb(98, 78, 78);
-    margin-bottom: 900px;
 }
 
 /* HEADER */
@@ -1314,7 +1313,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 36px 320px;
+    padding: 36px 280px;
 }
 
 .contact__head {
@@ -1346,7 +1345,7 @@ body {
 }
 
 .contact__info--list {
-    max-width: 50%;
+    width:50%;
 }
 
 .contact__info--list:first-child {
@@ -1365,9 +1364,25 @@ body {
     border-radius: 5px 5px;
 }
 
+.contact__info--item:focus {
+    border: 2px solid rgb(255, 255, 255);
+}
+
 .contact__info--item::placeholder {
     color: white;
     font-weight: 400;
+}
+
+.contact__item--choose {
+    width: 100%;
+    position: relative;
+}
+
+.contact__item--choose i {
+    position: absolute;
+    right: 12px;
+    top: 30%;
+    color: white;
 }
 
 .contact__body--mess textarea {
@@ -1387,6 +1402,95 @@ body {
 .contact__body--mess textarea::placeholder {
     color: white;
 }
+
+.contact__body--btn {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact__body--btn a {
+    width: 200px;
+    background: white;
+    padding: 20px 95px;
+    border-radius: 3px;
+    color: #e52f37;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.25s ease-in-out;
+}
+
+.contact__body--btn a:hover {
+    opacity: 0.85;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 40px 200px;
+}
+
+.footer__list p {
+    font-size: 17px;
+    color: #454545;
+}
+
+.footer__list p span {
+    font-weight: 700;
+    color: #454545;
+}
+
+.footer__list p a {
+    text-decoration: underline;
+    color: #e52f37;
+}
+
+.footer__list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list ul li {
+    font-size: 17px;
+    padding: 0 8px;
+    color: #858585;
+}
+
+.footer__list--icon {
+    font-size: 25px;
+}
+
+.footer__list--icon:hover i {
+    color: #e52f37;
+}
+
+.icon__twitter i {
+    color: #4099ff;
+}
+
+.icon__pinterest i {
+    color: #C92228;
+}
+
+.icon__facebook i {
+    color: #3b5998;
+}
+
+.icon__instagram i {
+    color: #8a3ab9;
+}
+
+.icon__skype i {
+    color: #1e90ff;
+}
+
+
+
+
 
 
 
