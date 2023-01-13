@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>LaunchPage_CTK</title>
@@ -84,7 +86,7 @@
         </div>
 
         <div class="home__award--right" >
-            <div class="award__right--container">
+            <div class="award__right--container wow bounceIn" data-wow-delay="1s">
                 <h3 class="award--right--title">
                     Get Your Free 14-Day Trial
                 </h3>
@@ -99,7 +101,7 @@
 
                         <div class="form__wrap--content">
                             <i class="fa-regular fa-user"></i>
-                            <p class="form__wrap--lable">Company Name*</p>
+                            <p class="form__wrap--lable pointer__event--none">Company Name*</p>
                         </div>
                         <input type="text" >
                     </div>
@@ -108,7 +110,7 @@
 
                         <div class="form__wrap--content">
                             <i class="fa-regular fa-envelope"></i>
-                            <p class="form__wrap--lable">Email Address*</p>
+                            <p class="form__wrap--lable pointer__event--none">Email Address*</p>
                         </div>
                         
                         <input type="text">
@@ -116,13 +118,33 @@
 
                     <div class="form__wrap">
 
-                        <div class="form__wrap--content">
-                            <i class="fa-regular fa-pencil"></i>
-                            <p>We need LaunchPage for...</p>
-                            
-                            <i class="form__wrap--down fa-solid fa-chevron-down"></i>
+                        <div class="home__select-menu">
+                            <div class="home__select-btn">
+                                <div class="home__content">
+                                    <i class="fa-regular icon_pencil fa-pencil"></i>
+                                    <div class="home__sBtn-text form__wrap--lable">We need LaunchPage for...</div>
+                                </div>
+                               
+                                <i class="fa-solid icon_down fa-chevron-down"></i>
+                            </div>
+                    
+                            <ul class="home__options">
+                                <li class="home__option">
+                                    <span class="home__option-text  form__wrap--lable">We need LaunchPage for...</span>
+                                </li>
+                    
+                                <li class="home__option">
+                                    <span class="home__option-text form__wrap--lable">Our Support Team</span>
+                                </li>
+                    
+                                <li class="home__option">
+                                    <span class="home__option-text form__wrap--lable">Our Sales Department</span>
+                                </li>
+                    
+                            </ul>
                         </div>
-                        <input type="text">
+
+
                     </div>
 
                     <div class="form__submid">
@@ -187,7 +209,7 @@
     <!-- DISCOVER -->
     <div  class="discover">
 
-        <div class="discover__img">
+        <div class="discover__img wow slideInLeft" data-wow-delay="0.75s">
             <img src="./assets/img/about001.jpg" alt="">
         </div>
 
@@ -353,10 +375,10 @@
         </div>
 
         <div class="people__right">
-            <div  class="people__right--item">
-                <p class=" right__text--click clickHehe people__right--text right__text--primary " >Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.</p>
+            <div  class="people__right--item people__item--click">
+                <p class=" people__right--text " >Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.</p>
 
-                <div onclick="profileClick()" class="people__right--profile">
+                <div class="people__right--profile">
                     
                     <img src="./assets/img/testimonials3.jpg" alt="">
 
@@ -367,9 +389,9 @@
             </div>
 
             <div class="people__right--item">
-                <p class=" right__text--click people__right--text">Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.</p>
+                <p class=" people__right--text">Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.</p>
 
-                <div onclick="profileClick()" class="people__right--profile">
+                <div class="people__right--profile">
                     
                     <img src="./assets/img/testimonials2.jpg" alt="">
 
@@ -380,9 +402,9 @@
             </div>
 
             <div class="people__right--item">
-                <p class=" right__text--click people__right--text" >Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.</p>
+                <p class=" people__right--text" >Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.</p>
 
-                <div onclick="profileClick()" class="people__right--profile">
+                <div class="people__right--profile">
                     
                     <img src="./assets/img/testimonials1.jpg" alt="">
 
@@ -407,7 +429,7 @@
 
         </div>
 
-        <div class="our__body">
+        <div class="our__body wow fadeIn" data-wow-delay="0.75s">
 
             <div class="our__body--left">
                 <div class="our__body--square">
@@ -602,7 +624,7 @@
 
             <div class="amazing__body--list">
 
-                <div class="amazing__body--item">
+                <div class="amazing__body--item wow fadeIn" data-wow-delay="0.55s">
 
                     <div class="amazing__body-icon">
                         <i class="amazing__icon--supp fa-solid fa-screwdriver-wrench"></i>
@@ -621,7 +643,7 @@
 
                 </div>
 
-                <div class="amazing__body--item">
+                <div class="amazing__body--item wow fadeIn" data-wow-delay="1.55s">
 
                     <div class="amazing__body-icon">
                         <i class="amazing__icon--acces fa-solid fa-gift"></i>
@@ -645,7 +667,7 @@
 
             <div class="amazing__body--list">
 
-                <div class="amazing__body--item">
+                <div class="amazing__body--item wow fadeIn" data-wow-delay="0.8s">
 
                     <div class="amazing__body-icon">
                         <i class="amazing__icon--user fa-solid fa-users"></i>
@@ -663,7 +685,7 @@
 
                 </div>
 
-                <div class="amazing__body--item">
+                <div class="amazing__body--item wow fadeIn" data-wow-delay="1.55s">
 
                     <div class="amazing__body-icon">
                         <i class="amazing__icon--cost fa-solid fa-piggy-bank"></i>
@@ -685,7 +707,7 @@
 
             <div class="amazing__body--list">
 
-                <div class="amazing__body--item">
+                <div class="amazing__body--item wow fadeIn" data-wow-delay="1.3s">
 
                     <div class="amazing__body-icon">
                         <i class="amazing__icon--noti fa-solid fa-bell"></i>
@@ -703,7 +725,7 @@
 
                 </div>
 
-                <div class="amazing__body--item">
+                <div class="amazing__body--item wow fadeIn" data-wow-delay="1.8s">
 
                     <div class="amazing__body-icon">
                         <i class="amazing__icon--chat fa-regular fa-comments"></i>
@@ -742,7 +764,7 @@
     
             </div>
     
-            <div class="great__monthly">
+            <div class="great__monthly wow bounceIn" data-wow-delay="0.5s">
 
                     <h3>MONTHLY</h3>
         
@@ -763,7 +785,7 @@
     
             </div>
     
-            <div class="great__annualy">
+            <div class="great__annualy  wow bounceIn" data-wow-delay="1s" >
     
                 <h3>ANNUALY</h3>
     
@@ -865,7 +887,7 @@
     
             </div>
     
-            <div class="contact__body">
+            <div class="contact__body wow bounceIn" data-wow-delay="1s">
                 
                 <div class="contact__body--info">
     
@@ -883,9 +905,32 @@
 
                         <div class="contact__item--choose">
                             
-                            <input class="contact__info--item" placeholder="Choose Option" type="text">
+                            <!-- <input class="contact__info--item" placeholder="Choose Option" type="text">
 
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-down"></i> -->
+
+                            <div class="contact__select-menu">
+                                <div class="contact__select-btn">
+                                    <div class="contact__sBtn-text">Choose Option</div>
+                                    
+                                    <i class="fa-solid icon_down fa-chevron-down"></i>
+                                </div>
+                        
+                                <ul class="contact__options">
+                                    <li class="contact__option">
+                                        <span class="contact__option-text">Choose Option</span>
+                                    </li>
+                        
+                                    <li class="contact__option">
+                                        <span class="contact__option-text">Individual</span>
+                                    </li>
+                        
+                                    <li class="contact__option">
+                                        <span class="contact__option-text">Corporate</span>
+                                    </li>
+                        
+                                </ul>
+                            </div>
 
                         </div>
     
@@ -943,8 +988,13 @@
     <!-- END FOOTER -->
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
 
     <script src="./assets/main.js" ></script>
+    
     
 </body>
 </html>
