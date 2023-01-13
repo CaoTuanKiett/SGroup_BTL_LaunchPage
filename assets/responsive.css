@@ -32,6 +32,10 @@
         margin-bottom: 30px;
     }
 
+    body .agency {
+        padding: 110px 20px;
+    }
+
     .agency .agency__container {
         padding: 0;
     }

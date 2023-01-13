@@ -12,6 +12,7 @@ body {
     background-color: rgb(208, 197, 197);
 }
 
+
 /* HEADER */
 
 .header {
@@ -686,6 +687,14 @@ body {
     font-size: 20px;
     color: #7c8595;
     line-height: 32px;
+}
+
+.people__right--text {
+    display: none;
+}
+
+.people__right .right__text--primary {
+    display: block !important; 
 }
 
 .people__right--profile {
