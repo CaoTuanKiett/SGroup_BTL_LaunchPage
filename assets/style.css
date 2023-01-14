@@ -67,6 +67,10 @@ body {
     background-color: rgb(208, 197, 197);
 }
 
+.displayBlock {
+    display: block !important;
+}
+
 
 /* HEADER */
 
@@ -77,7 +81,7 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
     background-color: white;
     position: fixed;  
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04)!important;
@@ -860,6 +864,7 @@ body {
 /* OUR */
 
 .our {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -973,6 +978,64 @@ body {
     transform: translateY(-50%);
 }
 
+.our__popup-image {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our__box-image {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our__popup-image .our__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.our__popup-image span {
+    position: absolute;
+    position: absolute;
+    z-index: 100;
+    color: #e2d4d4;
+    font-size: 42px;
+    top: -46px;
+    right: 0;
+}
+
+.our__popup-image img {
+    z-index: 100;
+
+}
+
+.our__box-number {
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+.our__box-number p {
+    color: white;
+}
+
+
 
 /* MEET */
 
@@ -1006,6 +1069,7 @@ body {
 .meet__body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .meet__body--profile {

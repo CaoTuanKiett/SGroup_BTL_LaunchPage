@@ -15,6 +15,25 @@
         display: none;
     }
 
+    .navbar__list ul {
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        padding-bottom: 20px;
+        align-items:flex-start !important;
+    }
+
+    .navbar__list ul .navbar__item {
+        padding-left: 136px;
+    }
+
+    .navbar__list ul .navbar__item:last-child {
+        padding-top: 10px;
+    }
+
     body .customize {
         padding: 13%;
     }

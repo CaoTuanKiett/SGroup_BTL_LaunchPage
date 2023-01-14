@@ -1,4 +1,16 @@
 
+// NAVBAR
+
+document.querySelector('.navbar__menu').onclick = () =>{
+    document.querySelector('.navbar__list').classList.toggle('displayBlock');
+}
+
+
+
+
+
+
+// PEOPLE
 
 const peopleOptions = document.querySelectorAll('.people__right--item')
 
@@ -62,6 +74,48 @@ contactOptions.forEach(option => {
     
 
 });
+
+
+
+
+
+
+
+// OUR
+
+const selectImg = document.querySelectorAll('.our__body--img');
+
+const numberLast = document.querySelector('.number--last');
+const numberFirst = document.querySelector('.number--first');
+
+
+selectImg.forEach(image => {
+    image.onclick = () => {
+
+        image.classList.add('change');
+
+        let changeImg = document.querySelector('.change .our__item--img img');
+
+        document.querySelector('.our__popup-image').style.display = 'flex';
+        document.querySelector('.our__popup-image img').src = changeImg.getAttribute('src');
+
+        // numberFirst.innerText = selectImg[i];
+        numberLast.innerText =  selectImg.length;
+
+        image.classList.remove('change');
+    }
+});
+
+document.querySelector('.our__popup-image span').onclick = () => {
+    document.querySelector('.our__popup-image').style.display = 'none';
+
+}
+
+document.querySelector('.our__popup-image .our__overlay').onclick = () => {
+    document.querySelector('.our__popup-image').style.display = 'none';
+    
+
+}
 
 
 
