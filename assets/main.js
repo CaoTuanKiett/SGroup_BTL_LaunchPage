@@ -99,8 +99,8 @@ selectImg.forEach(image => {
         document.querySelector('.our__popup-image').style.display = 'flex';
         document.querySelector('.our__popup-image img').src = changeImg.getAttribute('src');
 
-        // numberFirst.innerText = selectImg[i];
-        numberLast.innerText =  selectImg.length;
+        numberFirst.innerText = '..';
+        numberLast.innerText = selectImg.length;
 
         image.classList.remove('change');
     }
