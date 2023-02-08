@@ -27,7 +27,7 @@
     }
 
     .navbar__list ul .navbar__item {
-        padding-left: 136px;
+        padding-left: 13%;
     }
 
     .navbar__list ul .navbar__item:last-child {
@@ -38,13 +38,25 @@
         padding: 13%;
     }
 
+    body .our {
+        padding: 100px 14px ;
+    }
+
     .our .our__body {
         flex-wrap: wrap;
+        max-width: 750px;
     }
 
     .meet .meet__body {
         flex-direction: column;
         width: 100%;
+        max-width: 525px;
+    }
+
+
+
+    body .meet {
+        padding: 100px 0;
     }
 
     .meet__body .meet__body--profile {
@@ -52,16 +64,36 @@
     }
 
     body .agency {
-        padding: 110px 20px;
+        padding: 110px 14px;
     }
 
     .agency .agency__container {
         padding: 0;
     }
+
+    body .great {
+        padding: 100px 14px;
+    }
+
+    .great .great__head {
+        max-width: 525px;
+    }
+
+
+    body .frequently {
+        padding: 100px 14px;
+    }
     
+
+    body .contact {
+        padding: 100px 14px;
+        display: flex;
+        justify-content: center;
+    }
 
     .contact .contact__container {
         padding: 0;
+        max-width: 525px;
     }
 
 }
@@ -78,12 +110,12 @@
 
     body .home__award {
         flex-direction: column;
-        padding-top: 24%;
-        padding-bottom: 12%;
+        padding: 172px 0 86px 0;
     }
 
     .home__award .home__award--left {
         width: 100%;
+        max-width: 520px;
         padding: 0 14px;
         font-size: 38px;
         line-height: 44px;
@@ -106,9 +138,8 @@
 
     .home__award--right .award__right--container {
         width: 520px;
+        margin: 14px;
     }
-
-
 
 
     body .featured {
@@ -128,6 +159,7 @@
     body .wedo {
         padding: 13%;
         flex-direction: column;
+        text-align: center;
     }
 
     .wedo .wedo__container {
@@ -148,7 +180,7 @@
     }
 
     body .discover {
-        padding: 13% 125px;
+        padding: 13% 14px;
         flex-direction: column;
     }
 
@@ -165,10 +197,11 @@
 
     .discover .discover__container {
         width: 100%;
+        max-width: 525px;
     }
 
     body .customize {
-        padding: 13%;
+        padding: 13% 14px;
         flex-direction: column;
     }
 
@@ -196,7 +229,8 @@
     }
 
     body .people {
-        padding: 13%;
+        /* padding: 13%; */
+        padding: 13% 14px;
         flex-direction: column;
     }
 
@@ -204,26 +238,31 @@
         width: 100%;
         padding-right: 0;
         padding-bottom: 50px;
+        max-width: 525px;
     }
 
     .people__left .people__left--head .people__left--trustPilot:first-child {
-        padding-right: 150px;
+        padding-right: 250px;
+        border-right: none;
     }
 
     .people .people__right {
         width: 100%;
+        max-width: 525px;
     }
 
     .people__right .people__right--item {
         width: 100%;
     }
 
-    body .our {
-        padding: 100px ;
+    .people__left--head .people__left--trustPilot:last-child {
+        padding-left: 0;
     }
+
 
     .our .our__body {
         flex-wrap: wrap;
+        max-width: 525px;
     }
 
     .our__body .our__body--square--img {
@@ -248,13 +287,10 @@
         max-width: 50%;
     }
 
-
-
-
-
-    body .meet {
-        padding: 100px;
+    body .amazing {
+        padding: 100px 14px;
     }
+
     
     .meet .meet__body {
         flex-direction: column;
@@ -275,16 +311,10 @@
 
 
 
-    
-
-
-
-    body .amazing {
-        padding: 100px;
-    }
 
     .amazing .amazing__body {
         flex-direction: column;
+        max-width: 525px;
     }
 
     .amazing__body .amazing__body--list {
@@ -294,12 +324,11 @@
 
 
 
-    body .great {
-        padding: 100px;
-    }
+    
 
     .great .great__app {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .great__app .great__head {
@@ -308,16 +337,14 @@
     }
 
     .great__app .great__monthly {
-        width: 40%;
+        width: 300px;
         margin: 0;
-        margin-left: 20px;
         padding: 40px 0px;
     }
 
     .great__app .great__annualy {
-        width: 40%;
-        margin: 0;
-        margin-right: 20px;
+        width: 300px;
+        margin: 15px;
         padding: 40px 0px;
     }
 
@@ -325,12 +352,11 @@
 
     
 
-    body .frequently {
-        padding: 100px;
-    }
+    
 
     .frequently .frequently__body {
         flex-direction: column;
+        max-width: 525px;
     }
 
 
@@ -355,7 +381,7 @@
 
 
     body .footer {
-        padding: 30px;
+        padding: 30px 4px;
         flex-direction: column;
     }
 

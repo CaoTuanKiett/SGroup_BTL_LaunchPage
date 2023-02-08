@@ -5,6 +5,15 @@ document.querySelector('.navbar__menu').onclick = () =>{
     document.querySelector('.navbar__list').classList.toggle('displayBlock');
 }
 
+const navbarItem = document.querySelectorAll('.navbar__item')
+navbarItem.forEach(option => {
+    option.addEventListener('click', () => {
+        
+    document.querySelector('.navbar__list').classList.toggle('displayBlock');
+
+    });
+});
+
 
 
 
@@ -108,13 +117,10 @@ selectImg.forEach(image => {
 
 document.querySelector('.our__popup-image span').onclick = () => {
     document.querySelector('.our__popup-image').style.display = 'none';
-
 }
 
 document.querySelector('.our__popup-image .our__overlay').onclick = () => {
     document.querySelector('.our__popup-image').style.display = 'none';
-    
-
 }
 
 

@@ -696,6 +696,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
+    text-align: center;
 }
 
 .fun__overlay {
@@ -789,6 +790,7 @@ body {
 .people__left--head {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .people__left--trustPilot:first-child {
@@ -1611,6 +1613,7 @@ body {
 
 .contact__select-menu {
     width: 100%;
+    padding-bottom: 15px;
 }
 
 .contact__select-menu .contact__select-btn {
