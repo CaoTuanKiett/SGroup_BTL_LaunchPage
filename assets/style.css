@@ -71,6 +71,10 @@ body {
     display: block !important;
 }
 
+.change_color {
+    color: #e52f37;
+}
+
 
 /* HEADER */
 
@@ -104,6 +108,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .navbar__item {
@@ -111,6 +116,7 @@ body {
 }
 
 .navbar__item a {
+    cursor: pointer;
     font-size: 17px ;
     line-height: 38px ;
     font-weight: 500;
@@ -306,13 +312,14 @@ body {
 
 .form__wrap input {
     width: 100%;
-    font-size: 18px;
+    font-size: 17px;
     padding: 15px 35px;
     border: 1px solid #f1f1f1;
     background: #f9f9f9;
-    color: #91959b;
+    color: #071e55;
     border-radius: 5px;
 }
+
 
 .form__wrap--down {
     margin-left: 68px;
@@ -1587,6 +1594,7 @@ body {
     border: 2px solid #fff;
     background-color: transparent;
     font-size: 16px;
+    color: white;
     border-radius: 5px 5px;
 }
 
@@ -1702,6 +1710,7 @@ body {
     background-color: transparent;
     border: 2px solid #fff;
     font-size: 16px;
+    color: white;
     border-radius: 5px 5px;
 }
 

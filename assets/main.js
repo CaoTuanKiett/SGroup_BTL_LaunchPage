@@ -1,3 +1,15 @@
+// SCROLL 
+
+const links =  document.querySelectorAll('.link');
+links.forEach((item, index) =>{
+    item.addEventListener('click', ()=>{
+        const element = document.getElementById(item.getAttribute('data-link'));
+        element.scrollIntoView({behavior:'smooth' , block:'start'});
+       
+    })
+
+})
+
 
 // NAVBAR
 
