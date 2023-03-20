@@ -5,10 +5,24 @@ links.forEach((item, index) =>{
     item.addEventListener('click', ()=>{
         const element = document.getElementById(item.getAttribute('data-link'));
         element.scrollIntoView({behavior:'smooth' , block:'start'});
-       
-    })
+        
 
+        for (let index = 0; index < links.length; index++) {
+
+            if(links[index].classList.contains("change_color")){
+                links[index].classList.remove("change_color")
+            }
+
+            if (links[index] == item) {
+                item.classList.add("change_color");
+            }
+            
+        }
+
+    })
 })
+
+
 
 
 // NAVBAR
