@@ -1,3 +1,19 @@
+// HEADER SCROLL
+window.onscroll = () =>{
+    const docScroll =document.documentElement.scrollTop;
+    const header = document.querySelector(".header")
+    if(docScroll > 100 && docScroll< 500) {
+        header.style.top = "-100px";
+        header.style.transition = "all 0.2s ease-in-out";
+    }
+    else{
+        header.style.top = "0px";
+    }
+}
+
+
+
+
 // SCROLL 
 
 const links =  document.querySelectorAll('.link');
